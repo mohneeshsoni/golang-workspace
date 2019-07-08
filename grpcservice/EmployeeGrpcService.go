@@ -14,5 +14,6 @@ func (server *Server) GetAllEmployee(ctx context.Context, req *protobuf.GetAllEm
 	employeeList = append(employeeList, &protobuf.Employee{EmpName: "Name1", EmpEmail: "Email1"})
 	employeeList = append(employeeList, &protobuf.Employee{EmpName: "Name2", EmpEmail: "Email2"})
 	employeeList = append(employeeList, &protobuf.Employee{EmpName: "Name3", EmpEmail: "Email3"})
+	employeeList = append(employeeList, &protobuf.Employee{EmpName: "Name4", EmpEmail: "Email4"})
 	return employeeResponse, nil
 }

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package protobuf;
+
+service EmployeeMgmtService {
+    rpc GetAllEmployee (GetAllEmployeeRequest) returns (GetAllEmployeeResponse) {};
+}
+
+message GetAllEmployeeResponse{
+    repeated  Employee employee_list= 1;
+}
+message GetAllEmployeeRequest{
+    string dept_name=1;
+}
+
+message Employee{
+    string emp_id= 1;
+    string emp_name= 2;
+    string emp_email= 3;
+    string emp_mobile= 4;
+}
+
